@@ -1,4 +1,7 @@
-a=1
-# b=2
-# c=3
-# print(a,b,c);
+
+# Category	Functions
+# Adding Elements	add(), update()
+# Removing Elements	remove(), discard(), pop(), clear()
+# Set Operations	union(), intersection(), difference()
+# Relationships	issubset(), issuperset(), isdisjoint()
+# Other	frozenset()
