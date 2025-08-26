@@ -98,11 +98,17 @@ merged_list = list1 + list2
 print(merged_list)
 print("\n\n")
 
+#OutPut
+[1, 2, 3, 4, 5, 6]
+
 
 
 list1.extend(list2)
 print(list1)
 print("\n\n")
+
+#OUTPUT
+[1, 2, 3, 4, 5, 6]
 
 
 
@@ -114,6 +120,38 @@ scores = [85, 90, 78]
 paired_list = list(zip(names, scores))
 print(paired_list)
 print("\n\n")
+
+
+#OUTPUT
+[("Alice", 85), ("Bob", 90), ("Charlie", 78)]
+
+#OTHER
+#01
+names = ["Alice", "Bob", "Charlie"]
+scores = [85, 90, 78, 55
+paired_list = list(zip(names, scores))
+print(paired_list)
+print("\n\n")
+
+#note:
+The extra 55 in scores is ignored, because names has only 3 elements.
+
+#Execution:: paired_list = [("Alice", 85), ("Bob", 90), ("Charlie", 78)]
+#OUTPUT
+[('Alice', 85), ('Bob', 90), ('Charlie', 78)]
+
+#02
+paired_list = [(names[i], scores[i]) for i in range(len(names))]
+print(paired_list)
+
+#03
+paired_dict = dict(zip(names, scores))
+print(paired_dict)
+
+#04
+paired_list = [(names[i], score) for i, score in enumerate(scores)]
+print(paired_list)
+
 
 
 
