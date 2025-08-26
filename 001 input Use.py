@@ -1,15 +1,3 @@
-Great question 👍 The colon (:) in Python is used in several important places — 
-it tells Python “a block of code (or a suite) starts here” or helps define slices and type hints.
-
-
-
-
-
-
-
-
-
-
 # 01.
 str=input("enter a string")
 print("string---",str)
