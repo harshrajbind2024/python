@@ -68,6 +68,9 @@ squared_list = list(map(lambda x: x ** 2, numbers))
 print(squared_list)
 print("\n\n")
 
+#OUTPUT
+[100, 400, 900, 400, 1600, 100, 2500]
+
 
 
 list1 = [1, 2, 3]
