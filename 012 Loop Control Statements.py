@@ -21,6 +21,12 @@ for i in range(5):
         pass  # Placeholder
     print(i)
 
+// output
+0
+1
+2
+3
+4
 
 
 
