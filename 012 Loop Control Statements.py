@@ -9,7 +9,7 @@ print("\n")
 for i in range(1, 6):
     print("\n")
     if i == 3:
-        continue            # skip the rest of this iteration when i == 3
+        continue            # skip the rest of this iteration when i == 3.
     print(i)
 
 
