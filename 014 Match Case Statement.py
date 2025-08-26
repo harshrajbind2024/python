@@ -49,8 +49,24 @@ print(get_department({"id": 102, "name": "IT"}))  # Output: Information Technolo
 
 #04
 
+# Match-case example in Python 3.10+
+
+command = input("Enter command (start/stop): ")
+
 match command:
     case "start":
         print("Starting...")
     case "stop":
         print("Stopping...")
+    case _:
+        print("Unknown command")
+
+
+#OutPut
+
+Sample Run:
+Enter command (start/stop): start
+Starting...
+
+Enter command (start/stop): stop
+Stopping...
