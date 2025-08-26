@@ -71,6 +71,25 @@ print("\n\n")
 #OUTPUT
 [100, 400, 900, 400, 1600, 100, 2500]
 
+other way
+#1
+import numpy as np
+numbers = [10, 20, 30, 20, 40, 10, 50]
+squared_list = np.square(numbers).tolist()
+
+#2
+squared_list = list(map(pow, numbers, [2] * len(numbers)))
+
+#3
+squared_list = []
+for x in numbers:
+    squared_list.append(x ** 2)
+
+#4
+squared_list = [x ** 2 for x in numbers]
+
+
+
 
 
 list1 = [1, 2, 3]
