@@ -9,7 +9,7 @@ print("\n")
 for i in range(1, 6):
     print("\n")
     if i == 3:
-        continue
+        continue            # skip the rest of this iteration when i == 3
     print(i)
 
 
@@ -18,7 +18,7 @@ for i in range(1, 6):
 
 for i in range(5):
     if i == 3:
-        pass  # Placeholder
+        pass  # Placeholder,       # does nothing, just a placeholder
     print(i)
 
 // output
