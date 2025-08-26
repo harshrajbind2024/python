@@ -1,3 +1,5 @@
+#01
+
 day = 2
 match day:
     case 1:
@@ -11,7 +13,7 @@ match day:
 
 
 
-
+#02
 def check_vowel(char):
     match char.lower():
         case 'a' | 'e' | 'i' | 'o' | 'u':
@@ -27,6 +29,7 @@ print(check_vowel("B"))  # Output: Consonant
 
 
 
+#03
 
 def get_department(code):
     match code:
@@ -38,3 +41,16 @@ def get_department(code):
             return "Unknown Department"
 
 print(get_department({"id": 102, "name": "IT"}))  # Output: Information Technology
+
+
+
+
+
+
+#04
+
+match command:
+    case "start":
+        print("Starting...")
+    case "stop":
+        print("Stopping...")
