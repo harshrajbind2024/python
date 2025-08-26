@@ -1,12 +1,19 @@
 #01
 
- 4 main types of brackets:
-Parentheses (Round brackets) ( )
-Square [ ]
-Curly { }
-Angle < >
+QUE: 4 main types of brackets:
+ANS:
+ Parentheses (Round brackets) ( )
+ Square [ ]
+ Curly { }
+ Angle < >
 
 
 
 
 #02
+QUE : what reason use : in python
+ANS:
+Great question 👍 The colon (:) in Python is used in several important places — 
+it tells Python “a block of code (or a suite) starts here” or helps define slices and type hints.
+
+
