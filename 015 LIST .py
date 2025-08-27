@@ -161,6 +161,25 @@ flat_list = [item for sublist in nested_list for item in sublist]
 print(flat_list)
 print("\n\n")
 
+Execution:
+nested_list = [[1, 2], [3, 4], [5, 6]]
+The list comprehension means
+take each sublist ([1,2], [3,4], [5,6])
+then take each item inside that sublist
+add it to flat_list
+So it flattens the nested list.
+
+#OUTPUT
+[1, 2, 3, 4, 5, 6]
+
+#OTHER
+#01
+nested_list = [[1, 2], [3, 4], [5, 6]]
+flat_list = sum(nested_list, [])
+print(flat_list)
+
+
+
 
 
 
@@ -179,6 +198,10 @@ students = [("Alice", 25), ("Bob", 20), ("Charlie", 22)]
 sorted_students = sorted(students, key=lambda x: x[1])  # Sort by age
 print(sorted_students)
 print("\n\n")
+
+
+OUTPUT:
+[('Bob', 20), ('Charlie', 22), ('Alice', 25)]
 
 
 
@@ -207,6 +230,8 @@ sorted_nums = sorted(nums, reverse=True)  # Sort in descending order
 print(sorted_nums)
 print("\n\n")
 
+OUTPTU:  [9, 8, 5, 3, 1]
+
 
 
 
@@ -227,10 +252,16 @@ print("\n\n")
 
 nums = [10, 20, 30, 40, 50, 60]
 every_second = nums[::2]
-print(every_second)
+print(every_second)  
 print("\n\n")
 clear_list=nums.clear();
 print(clear_list)
+
+OUTPUT: every_second : [10, 30, 50]
+        clear_list : None
+
+
+
 
 
 
@@ -256,6 +287,11 @@ li3=list1.copy()
 print(li3)
 print("\n")
 
+OUTPUT: li2 : [1, 2, 34, 5]
+        li3 : [1, 2, 34, 5]
+
+
+
 
 
 
@@ -269,6 +305,9 @@ dq.append(4)      # Insert at the end
 print(dq)
 print("\n\n")
 
+OUTPUT : deque([0, 1, 2, 3, 4])
+
+
 
 
 
@@ -277,11 +316,14 @@ print("\n\n")
 
 
 from itertools import permutations, combinations
-
 items = [1, 2, 3]
 print(list(permutations(items, 2)))  # All 2-item orderings
 print(list(combinations(items, 2)))  # All 2-item groups
 print("\n\n")
+
+OUTPUT: [(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
+        [(1, 2), (1, 3), (2, 3)]
+
 
 
 
@@ -296,6 +338,11 @@ nums = [10, 5, 3, 8, 2]
 heapq.heapify(nums)  # Convert to a heap (min-heap by default)
 print(heapq.heappop(nums))  # Remove and return the smallest element
 print("\n\n")
+
+OUTPUT: 2
+
+
+
 
 
 
