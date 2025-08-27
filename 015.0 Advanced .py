@@ -9,6 +9,14 @@ print("\n")
 print(sorted_students)
 print("\n")
 
+OUTPUT : 
+[
+    {'name': 'Bob', 'age': 22, 'score': 90},
+    {'name': 'Charlie', 'age': 22, 'score': 78},
+    {'name': 'Alice', 'age': 25, 'score': 85}
+]
+
+
 
 
 fruits = ["apple", "banana", "cherry"]
@@ -16,12 +24,16 @@ for index, fruit in enumerate(fruits):
     print(index, fruit)
 print("\n")
 
+OUTPUT :
+0 apple
+1 banana
+2 cherry
+
 
 
 
 names = ["Alice", "Bob", "Charlie"]
 scores = [85, 90, 78]
-
 combined = list(zip(names, scores))
 print(combined)
 print("\n")
