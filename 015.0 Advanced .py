@@ -149,6 +149,10 @@ print(dict(subjects))
 print("\n")
 
 
+#Output
+{'Alice': ['Math', 'Science'], 'Bob': ['Science']}
+
+
 
 
 
@@ -159,6 +163,17 @@ data = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
 counter = Counter(data)
 print(counter.most_common(1))  # Most common item
 print("\n")
+
+# step by step
+Counter(data) counts each element’s frequency:
+'apple' → 3
+'banana' → 2
+'orange' → 1
+counter.most_common(1) returns the single most common item as a list of (element, count).
+
+
+#output
+[('apple', 3)]
 
 
 
@@ -178,3 +193,13 @@ def max_subarray_sum(arr, k):
 nums = [2, 1, 5, 1, 3, 2]
 print(max_subarray_sum(nums, 3))
 print("\n")
+
+
+
+#Step by step:
+Input: nums = [2, 1, 5, 1, 3, 2], k = 3.
+Initial window ([2, 1, 5]) → sum = 8.
+Slide the window:
+Remove 2, add 1 → sum = 7 → max = 8.
+Remove 1, add 3 → sum = 9 → max = 9.
+Remove 5, add 2 → sum = 6 → max = 9.
