@@ -17,3 +17,57 @@ Great question 👍 The colon (:) in Python is used in several important places 
 it tells Python “a block of code (or a suite) starts here” or helps define slices and type hints.
 
 
+
+
+
+
+#03
+QUE: use lambda
+ANS: In Python, a lambda is used to create anonymous (inline) functions — functions without a name.
+E.G. lambda arguments: expression    :   It can take any number of arguments, but only one expression (which is automatically returned).
+     add = lambda x, y: x + y
+     print(add(5, 3))
+
+
+
+
+#04 
+what is enumerate
+ A. enumerate() which gives both the index and the element while looping.
+ B. enumerate(fruits) → returns (index, value) pairs:
+
+
+
+
+
+#05
+  A. zip() to combine two lists element-wise.
+  B. zip() in Python is super useful when you want to combine two (or more) iterables element-wise.
+  
+
+
+
+#06
+what is yield
+yield is used in a generator function to return values one at a time instead of all at once.
+
+
+
+
+#07
+🔹 Difference between return and yield
+return → ends the function completely and gives back a single value.
+yield → pauses the function, gives back a value, but remembers the function’s state so it can continue from where 
+it left off when called again.
+
+
+
+#08
+🔹 Why use yield?
+Memory efficient → doesn’t build the entire list in memory.
+Example: Generating numbers up to 1,000,000 uses almost no extra memory.
+Lazy evaluation → computes values only when needed.
+Infinite sequences → you can make endless streams of data.
+
+
+
