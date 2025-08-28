@@ -32,28 +32,6 @@ OUTPUT :
 
 
 
-names = ["Alice", "Bob", "Charlie"]
-scores = [85, 90, 78]
-combined = list(zip(names, scores))
-print(combined)
-print("\n")
-
-
-
-
-nested_list = [[1, 2], [3, 4], [5, 6]]
-flat_list = [item for sublist in nested_list for item in sublist]
-print(flat_list)
-print("\n")
-
-
-
-
-numbers = [1, 2, 3, 4]
-squared = list(map(lambda x: x**2, numbers))
-print(squared)
-print("\n")
-
 
 
 
@@ -74,7 +52,16 @@ sum_all = reduce(lambda x, y: x + y, numbers)
 print(sum_all)
 print("\n")
 
+Execute :
+Step by step:
+reduce(function, iterable) → repeatedly applies the function to the iterable, accumulating a single result.
+With lambda x, y: x + y → it adds numbers one by one:
+Step 1: 1 + 2 = 3
+Step 2: 3 + 3 = 6
+Step 3: 6 + 4 = 10
+Step 4: 10 + 5 = 15
 
+OUTPUT : 15
 
 
 
@@ -98,11 +85,16 @@ print("\n")
 
 
 import heapq
-
 nums = [10, 5, 3, 8, 2]
 heapq.heapify(nums)  # Convert to a heap (min-heap by default)
 print(heapq.heappop(nums))  # Remove and return the smallest element
 print("\n")
+
+Step by step:
+Original list: [10, 5, 3, 8, 2]
+heapq.heapify(nums) reorganizes it into a heap structure internally → ensures the smallest element is always at index 0.
+(Heap might look like [2, 5, 3, 8, 10], but order beyond heap property is not guaranteed).
+heapq.heappop(nums) → removes and returns the smallest element → 2.
 
 
 
@@ -117,6 +109,11 @@ gen = number_generator(1000000)  # Uses much less memory than a list
 print(next(gen))
 print("\n")
 
+
+Step by step:
+number_generator(n) is a generator function → it yields values one by one instead of storing them all in memory.
+gen = number_generator(1000000) → creates a generator that can produce numbers from 0 to 999999.
+next(gen) → gives the first value produced by the generator → 0.
 
 
 
