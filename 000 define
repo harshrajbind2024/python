@@ -71,3 +71,18 @@ Infinite sequences → you can make endless streams of data.
 
 
 
+
+#09
+QUE: why use from collections import defaultdict
+ANS: 1. We use defaultdict to avoid writing extra checks for missing keys and make code cleaner, especially for grouping, 
+     counting, or collecting items.
+
+    defaultdict(int) → default value 0 (great for counters).
+    defaultdict(set) → default value set() (avoids duplicates).
+    defaultdict(dict) → default value {} (nested dicts).
+
+
+#10
+QUE:  🔹 What is a frozenset?
+ANS:  A frozenset is just like a normal set in Python, but immutable (cannot be changed after creation).
+      You can’t add, remove, or update elements once it’s created.
