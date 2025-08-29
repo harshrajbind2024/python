@@ -96,3 +96,14 @@ Add/remove	  ✅ Yes	            ❌ No
 Hashable	    ❌ No	             ✅ Yes (can be dict keys / set elements)
 Use cases	   When you need to   When you need fixed, unique collection
              modify	
+
+
+
+#12
+# Feature     	                   Tuple ✅	        List ✅
+# Mutable (Changeable)?	          ❌ No	           ✅ Yes
+# Faster in Iterations?	          ✅ Yes	          ❌ No
+# Memory Efficient?	              ✅ Yes	          ❌ No
+# Indexing & Slicing?	            ✅ Yes	          ✅ Yes
+# Used as Dictionary Keys?	       ✅ Yes	          ❌ No
+# Stores Fixed Data?	             ✅ Yes	          ❌ No
