@@ -86,3 +86,13 @@ ANS: 1. We use defaultdict to avoid writing extra checks for missing keys and ma
 QUE:  🔹 What is a frozenset?
 ANS:  A frozenset is just like a normal set in Python, but immutable (cannot be changed after creation).
       You can’t add, remove, or update elements once it’s created.
+
+
+
+#11
+🔹 Difference between set and frozenset
+Feature	    set (mutable)	     frozenset (immutable)
+Add/remove	  ✅ Yes	            ❌ No
+Hashable	    ❌ No	             ✅ Yes (can be dict keys / set elements)
+Use cases	   When you need to   When you need fixed, unique collection
+             modify	
