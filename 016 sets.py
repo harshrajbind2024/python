@@ -26,6 +26,11 @@ print(numbers)  # {1, 2, 4, 5, 6, 7}
 
 
 
+numbers = {1, 2, 4, 5, 6, 7}
+numbers.discard(5)
+print(numbers) # {1, 2, 4, 6, 7}
+
+
 popped_value = numbers.pop()
 print(popped_value)  # Random element
 print(numbers)
@@ -78,7 +83,6 @@ print(X.isdisjoint(Y))  # True
 
 
 #  Set Comprehension
-
 squared_set = {x**2 for x in range(1, 6)}
 print(squared_set)  # {1, 4, 9, 16, 25}
 
@@ -120,15 +124,16 @@ print("Bob" in names)  # ✅ Fast
 
 
 import time
-
 # Large dataset
-items = list(range(1000000))  
-items_set = set(items)  
+items = list(range(1000000))   # [0, 1, 2, 3, 4, 5, ..., 999999]
+items_set = set(items)         #{0, 1, 2, 3, 4, 5, ..., 999999}
+
 
 # Checking membership in a list
 start = time.time()
-print(999999 in items)  # ✅ Slow
-print("List time:", time.time() - start)
+print(999999 in items)  # ✅ Slow           #True
+print("List time:", time.time() - start)   #True
+
 
 # Checking membership in a set
 start = time.time()
@@ -175,7 +180,7 @@ permissions = frozenset(["read", "write"])
 
 large_set = set(range(1000000))
 precomputed_intersection = large_set & {999999}
-
+print(precomputed_intersection) #{999999}
 
 big_list = list(range(1000000))  
 big_set = set(big_list)  
