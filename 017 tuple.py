@@ -3,6 +3,7 @@ my_tuple = (1, 2, 3, 4)
 print(my_tuple)  # (1, 2, 3, 4)
 print("\n")
 
+
 my_tuple = 1, 2, 3
 print("2 ")
 print(my_tuple)  # (1, 2, 3)
