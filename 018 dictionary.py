@@ -24,6 +24,7 @@ d = {'a': 1, 'b': 2}
 print(d.get('a'))  # Output: 1
 print(d.get('z', 'Not Found'))  # Output: Not Found
 
+print(d.get('y')) #output : none
 
 
 
