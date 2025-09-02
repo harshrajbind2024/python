@@ -114,6 +114,10 @@ print(person)  # Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
 
 
 
+
+
+
+
 print("\n""13 ")
 # Using dict() with map()
 names = ['Alice', 'Bob', 'Charlie']
@@ -121,6 +125,44 @@ ages = [25, 30, 35]
 
 people = dict(map(lambda name_age: (name_age[0], name_age[1]), zip(names, ages)))
 print(people)  # Output: {'Alice': 25, 'Bob': 30, 'Charlie': 35}
+
+#Step By step
+people = dict(map(lambda name_age: (name_age[0], name_age[1]),
+                  zip(names, ages)))
+
+zip(names, ages)
+Pairs up items by position.
+Example: if names = ["Alice", "Bob"] and ages = [25, 30],
+zip(...) yields ("Alice", 25), ("Bob", 30) (an iterator of tuples).
+
+map(lambda name_age: (name_age[0], name_age[1]), zip(...))
+Applies the lambda to each tuple from zip.
+The lambda just returns the same (name, age) tuple it received.
+In other words, this map step is redundant—it doesn’t change anything.
+
+dict(...)
+Consumes the (name, age) pairs and builds a dictionary:
+{"Alice": 25, "Bob": 30}.
+If a name appears more than once, the last age wins.
+If names and ages have different lengths, zip stops at the shorter one.
+✅ Net effect: create a mapping from each name to its age.
+
+    
+Simpler (recommended) equivalents
+    Shortest:
+    people = dict(zip(names, ages))
+    
+    Or a comprehension:
+    people = {n: a for n, a in zip(names, ages)}
+    
+
+
+
+
+
+
+
+
 
 
 print("\n""14 ")
