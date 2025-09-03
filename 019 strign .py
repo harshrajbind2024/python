@@ -1,12 +1,21 @@
 print("\n""1 ")
 txt = "The best things in life are free!"
-print("free" in txt)
+print("free" in txt) 
+
+
+
+#True
 
 
 print("\n""2 ")
 txt = "The best things in life are free!"
 if "free" in txt:
-  print("Yes, 'free' is present.")
+  print("Yes, 'free' is present.") 
+
+
+
+
+#Yes, 'free' is present.
 
 
 
@@ -15,7 +24,11 @@ if "free" in txt:
 
 print("\n""3 ")
 txt = "The best things in life are free!"
-print("expensive" not in txt)
+print("expensive" not in txt)  
+
+
+
+#True
 
 
 
@@ -30,19 +43,28 @@ if "expensive" not in txt:
 print("\n""5 ")
 # Slicing
 b = "Hello, World!"
-print(b[:5])
+print(b[:5]) 
+
+
+#Hello
 
 
 
 print("\n""6 ")
 b = "Hello, World!"
-print(b[2:])
+print(b[2:]) 
+
+
+#llo, World!
 
 
 
 print("\n""7 ")
 b = "Hello, World!"
 print(b[-5:-2])
+
+
+#orl
 
 
 print("\n""8 ")
@@ -55,6 +77,15 @@ print(a.replace("H", "J"))
 print(a.split(",")) # returns ['Hello', ' World!']
 
 
+#
+HELLO, WORLD!
+hello, world!
+Hello, World!
+Jello, World!
+['Hello', ' World!']
+
+
+
 
 print("\n""9 ")
 # String Concatenation
@@ -64,12 +95,18 @@ c = a + b
 print(c)
 
 
+
+#HelloWorld
+
+
 print("\n""10 ")
 a = "Hello"
 b = "World"
 c = a + " " + b
 print(c)
 
+
+#Hello World
 
 
 print("\n"" 11")
@@ -80,11 +117,22 @@ print(txt)
 
 
 
+#
+Traceback (most recent call last):
+  File "main.py", line 4, in <module>
+    txt = "My name is John, I am " + age
+TypeError: can only concatenate str (not "int") to str
+
+
+
 print("\n""12 ")
 age = 36
 txt = f"My name is John, I am {age}"
 print(txt)
 
+
+#My name is John, I am 36
+ 
 
 print("\n""13 ")
 price = 59
@@ -98,6 +146,9 @@ print("\n""14 ")
 price = 59
 txt = f"The price is {price:.2f} dollars"
 print(txt)
+
+
+#The price is 59.00 dollars
 
 
 
@@ -198,13 +249,23 @@ print(bool("Hello"))
 print(bool(15))
 
 
+#
+True
+True
+
+
 
 print("\n"" 20")
 x = "Hello"
 y = 15
-
 print(bool(x))
 print(bool(y))
+
+
+#
+True
+True
+
 
 
 print("\n""21 ")
@@ -215,7 +276,6 @@ bool(["apple", "cherry", "banana"])
 
 
 # The following will return False:
-
 # bool(False)
 # bool(None)
 # bool(0)
