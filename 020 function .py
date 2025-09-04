@@ -21,7 +21,6 @@ my_function("Linus")
 
 # Parameters or Arguments?
 # A parameter is the variable listed inside the parentheses in the function definition.
-
 # An argument is the value that is sent to the function when it is called.
 
 print("\n"" 3")
