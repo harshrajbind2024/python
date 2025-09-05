@@ -41,45 +41,50 @@ def my_function(fname, lname):
 print("\n""5 ")
 def my_function(*kids):
   print("The youngest child is " + kids[2])
-
 my_function("Emil", "Tobias", "Linus")
+
+
+#The youngest child is Linus
 
 
 print("\n""6 ")
 def my_function(child3, child2, child1):
   print("The youngest child is " + child3)
-
 my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
 
+
+#The youngest child is Linus
 
 
 
 print("\n""7 ")
 def my_function(**kid):
   print("His last name is " + kid["lname"])
-
 my_function(fname = "Tobias", lname = "Refsnes")
 
 
+# His last name is Refsnes
 
 
 print("\n""8 ")
 def my_function(country = "Norway"):
   print("I am from " + country)
 
-my_function("Sweden")
-my_function("India")
-my_function()
-my_function("Brazil")
+my_function("Sweden")   #I am from Sweden
+my_function("India")    #I am from India
+my_function()           #I am from Norway
+my_function("Brazil")   #I am from Brazil
+
+
+
+
 
 
 print("\n""9 ")
 def my_function(food):
   for x in food:
     print(x)
-
 fruits = ["apple", "banana", "cherry"]
-
 my_function(fruits)
 
 
