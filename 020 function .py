@@ -110,15 +110,16 @@ def myfunction():
 print("\n""12 ")
 def my_function(x, /):
   print(x)
-
 my_function(3)
 
 
 #error
 # def my_function(x, /):
 #   print(x)
-
 # my_function(x = 3)
+
+
+'
 
 print("\n"" 13")
 def my_function(x):
